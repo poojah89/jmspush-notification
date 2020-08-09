@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: jms-push-notification
+  jmx:
+    default-domain: jms-push-notification
+  datasource:
+    druid:
+      initial-size: 1
+      max-active: 3
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:oracle:thin:@//localhost:1521/pdb3.fritz.box
+    username: AUTKUMULOUS
+    password: Tiger1
+    driver-class-name: oracle.jdbc.OracleDriver
+
+server:
+    port: 9301
+
+app:
+  queue: NOTI_AQ
+  serverKey: E9CQvaGou7BcoHoCkXBs3GgZ6HfRhOoYjArF
+  apiKey: 2499fbac-39b4-4526-9d64-cf4f18a2038d
+  
